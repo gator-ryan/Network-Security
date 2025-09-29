@@ -14,3 +14,8 @@ python-multipart
 
 
 ##-e .
+# The -e . entry in requirements.txt refers to the setup.py file. When you run pip install 
+# -r requirements.txt, it installs all specified libraries. The -e . entry triggers the 
+# setup.py file, which builds the entire Python project as a package. However, the 
+# get_requirements function is designed to ignore -e . so it is not treated as a library 
+# to install.
