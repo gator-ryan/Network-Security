@@ -1,7 +1,7 @@
-from dataclasses import dataclass
+from dataclasses import dataclass   ## to create the artifact classes which only have variables and no functions
 
 @dataclass
-class DataIngestionArtifact:
+class DataIngestionArtifact:    
     trained_file_path:str
     test_file_path:str
 
